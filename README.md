@@ -1,17 +1,18 @@
-# Deep-Convolutional-GAN
+## Deep-Convolutional-GAN
 
 This is a tensorflow implementation of the paper titled ** Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks**-https://arxiv.org/abs/1511.06434
 
-# Prerequisites:
+## Prerequisites:
 
-python
-tensorflow
-numpy
-matplotlib
+* python
+* tensorflow
+* numpy
+* matplotlib
 
-To run the training code, can simply run the code: first.py
+To run the training code, can simply run the code: 
+> first.py
 
-# Intuitive understanding of GAN
+## Intuitive understanding of GAN
 
 The model has two parts:
 Generator and Discriminator.
@@ -20,4 +21,34 @@ Generative Networks are learnt to generate pics/ data that looks the same- that 
 Discriminiative Networks are learnt to discriminate between and check if the generated data is from the distribution of training data or from newly generated image- kind of finding if it is fake or not.
 
 Thus over time generative networks become good at cheating discriminative networks and discriminiative networks become good at finding if the data is fake or not
+
+![Generative Adversarial Network](https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/gan_image.png)
+
+The two methods that we will specifically use to optimize our model are
+* Batch Normalization
+* use the activation function Relu
+
+To better optimize stochastically we will be using the ** Adam Optimizer**
+
+Now the most important part of training the systems here is making sure some faults do not occur:
+1) Discriminator losses become 0 and this will leave no loss for generator to optimize upon
+2) Discriminator losses become unbounded and this has no scope for the disrciminator and subsequentially  the generator to improve
+3) Divergent Discriminator accuracy
+
+To prevent this we need to run the training on a conditional basis, based on the different  losses.
+
+# Saving the model
+Finally the model is saved at regular checkpoints using the Tensorflow Saver Object
+
+# Summary
+At every 10th epoch, we will write a summary which includes all the losses:
+* Discriminator Real Loss
+* Discriminator Fake Loss
+* Generator Loss
+
+We will also produce 10 generator image and write its summary.
+
+
+
+
 
