@@ -1,6 +1,6 @@
 ## Deep-Convolutional-GAN
 
-This is a tensorflow implementation of the paper titled ** Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks**-https://arxiv.org/abs/1511.06434
+This is a tensorflow implementation of the paper titled __Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks__-https://arxiv.org/abs/1511.06434
 
 ## Prerequisites:
 
@@ -28,7 +28,7 @@ The two methods that we will specifically use to optimize our model are
 * Batch Normalization
 * use the activation function Relu
 
-To better optimize stochastically we will be using the ** Adam Optimizer**
+To better optimize stochastically we will be using the __Adam Optimizer__
 
 Now the most important part of training the systems here is making sure some faults do not occur:
 1) Discriminator losses become 0 and this will leave no loss for generator to optimize upon
@@ -49,8 +49,9 @@ At every 10th epoch, we will write a summary which includes all the losses:
 We will also produce 10 generator image and write its summary.
 
 # Generated output
-Using this model we are trying to generate MNIST like dataset.
-![Generated output looks something like:](https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/generated.png)
+Using this model we are trying to generate MNIST like dataset. Thus Generated output looks something like
+
+![] (https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/generated.png)
 
 
 
