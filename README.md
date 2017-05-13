@@ -40,13 +40,17 @@ To prevent this we need to run the training on a conditional basis, based on the
 # Saving the model
 Finally the model is saved at regular checkpoints using the Tensorflow Saver Object
 
-# Summary
+# Tensorflow Summary
 At every 10th epoch, we will write a summary which includes all the losses:
 * Discriminator Real Loss
 * Discriminator Fake Loss
 * Generator Loss
 
 We will also produce 10 generator image and write its summary.
+
+# Generated output
+Using this model we are trying to generate MNIST like dataset.
+![Generated output looks something like:](https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/generated.png)
 
 
 
