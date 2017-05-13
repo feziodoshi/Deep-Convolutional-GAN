@@ -51,7 +51,7 @@ We will also produce 10 generator image and write its summary.
 # Generated output
 Using this model we are trying to generate MNIST like dataset. Thus Generated output looks something like
 
-![] (https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/generated.png)
+![](https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/generated.png)
 
 
 
