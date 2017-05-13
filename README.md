@@ -1,6 +1,6 @@
 # Deep-Convolutional-GAN
 
-This is a tensorflow implementation of the paper titled Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks-https://arxiv.org/abs/1511.06434
+This is a tensorflow implementation of the paper titled ** Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks**-https://arxiv.org/abs/1511.06434
 
 # Prerequisites:
 
@@ -11,7 +11,7 @@ matplotlib
 
 To run the training code, can simply run the code: first.py
 
-# Intuitive understanding between these methods
+# Intuitive understanding of GAN
 
 The model has two parts:
 Generator and Discriminator.
