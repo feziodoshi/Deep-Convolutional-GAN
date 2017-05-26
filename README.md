@@ -53,7 +53,8 @@ Using this model we are trying to generate MNIST like dataset. Thus Generated ou
 
 ![](https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/generated.png)
 
-
-
-
+# References
+- https://arxiv.org/abs/1511.06434
+- https://github.com/Newmu/dcgan_code
+- https://github.com/zsdonghao/dcgan
 
