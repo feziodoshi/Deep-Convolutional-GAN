@@ -25,7 +25,7 @@ Thus over time generative networks become good at cheating discriminative networ
 ![Generative Adversarial Network](https://github.com/feziodoshi/Deep-Convolutional-GAN/blob/master/gan_image.png)
 
 The two methods that we will specifically use to optimize our model are
-* Batch Normalization
+* [Batch Normalization](https://arxiv.org/abs/1502.03167)
 * use the activation function Relu
 
 To better optimize stochastically we will be using the __Adam Optimizer__
