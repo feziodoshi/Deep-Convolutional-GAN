@@ -57,4 +57,5 @@ Using this model we are trying to generate MNIST like dataset. Thus Generated ou
 - https://arxiv.org/abs/1511.06434
 - https://github.com/Newmu/dcgan_code
 - https://github.com/zsdonghao/dcgan
+- [Adversarial PoseNet: A Structure-aware Convolutional Network for Human Pose Estimation](https://arxiv.org/pdf/1705.00389.pdf)
 
